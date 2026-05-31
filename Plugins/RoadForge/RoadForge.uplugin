@@ -1,0 +1,40 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "RoadForge",
+	"Description": "Procedural city/road generation from real OpenStreetMap data. Fetches roads and building footprints for a WGS84 bounding box via the Overpass API, projects them into local UE coordinates, and builds road surfaces, sidewalks, lane lines, curbs, extruded buildings and street-lamp instances at runtime with C++ ProceduralMesh / InstancedStaticMesh (no PCG graph required).",
+	"Category": "Geometry",
+	"CreatedBy": "RoadForge Contributors",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EngineVersion": "5.7.0",
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "RoadForge",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		},
+		{
+			"Name": "RoadForgeEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "ProceduralMeshComponent",
+			"Enabled": true
+		},
+		{
+			"Name": "PCG",
+			"Enabled": true
+		}
+	]
+}

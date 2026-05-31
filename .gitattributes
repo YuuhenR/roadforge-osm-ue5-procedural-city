@@ -1,0 +1,15 @@
+* text=auto
+
+# Unreal assets are binary. This keeps Git from trying to diff them.
+*.uasset binary
+*.umap binary
+*.ubulk binary
+*.uexp binary
+
+# Common source/document formats
+*.cpp text eol=lf
+*.h text eol=lf
+*.cs text eol=lf
+*.json text eol=lf
+*.ini text eol=lf
+*.md text eol=lf

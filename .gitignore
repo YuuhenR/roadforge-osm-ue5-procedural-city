@@ -1,0 +1,56 @@
+# Unreal Engine generated files
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+
+# Plugin generated files
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/Saved/
+
+# Locally generated RoadForge assets (can be regenerated from the editor menu)
+Plugins/RoadForge/Content/M_RoadForge_VC.uasset
+Plugins/RoadForge/Content/Textures/T_RF_*.uasset
+
+# IDE, tooling, and build-system noise
+.vs/
+.vscode/
+.idea/
+.claude/
+.cursor/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.code-workspace
+
+# Logs, crash reports, caches
+*.log
+*.dmp
+*.tmp
+webcache*/
+
+# Local map extracts and downloaded geodata
+SampleData/*.json
+*.osm
+*.pbf
+*.mbtiles
+*.geojson
+
+# Reference projects, experiments, and private notes
+Windows_0313/
+JianShuaShua/
+Plugins/RoadForge/docs/
+Reference*/
+References*/
+notes/
+*.local.md
+
+# Packaged builds
+Releases/
+Packages/
+StagedBuilds/
