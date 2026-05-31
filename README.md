@@ -8,6 +8,8 @@ RoadForge is a C++ Unreal Engine project for generating city road scenes from Op
 
 The project targets Unreal Engine 5.7 and uses runtime C++ mesh generation rather than a preauthored road asset library.
 
+> If RoadForge is useful to you, a star is very welcome. It helps other people find the project. Thank you!
+
 ## Features
 
 - Fetch road and building data from the Overpass API, or generate from a local OSM JSON file.
@@ -52,6 +54,15 @@ $env:UE_ROOT = "E:\UE\UE_5.7"
 5. Click `Fetch And Generate` or `Generate From Local File`.
 
 For public Overpass servers, keep the selected area modest. A bounding box around one to two city blocks is a good starting point. Larger areas can hit rate limits or produce very heavy procedural meshes.
+
+## Tools Menu
+
+All four tools live under `Tools -> RoadForge` in the Unreal Editor.
+
+- **Add OSM Road Generator to Level** - Spawns an `OSMRoadGenerator` at the world origin, generates a road network from the bundled sample data, and adds a cinematic lighting rig. This is the one-click way to get a result on screen right away.
+- **Import OSM File (New Generator)...** - Spawns a fresh generator, opens a file picker for any OSM or Overpass JSON export, generates that map, and adds the lighting rig. The fastest way to load a different city.
+- **Add Cinematic Lighting Rig** - Creates or retunes the lighting setup: directional sun, sky light, sky atmosphere, volumetric cloud, volumetric height fog, and an unbound post process volume, so the scene is lit close to the reference look.
+- **Regenerate RoadForge Material** - Rebuilds the shared PBR material `/RoadForge/M_RoadForge_VC` and wires up the CC0 detail textures if they have been imported.
 
 ## OSM Data
 
