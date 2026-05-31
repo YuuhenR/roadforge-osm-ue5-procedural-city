@@ -1,6 +1,8 @@
-# RoadForge: OSM-Based Procedural City Road Generator
+# RoadForge
 
-基于 OSM 的 UE5 程序化城市道路生成器
+**OSM-Based Procedural City Road Generator** · **基于 OSM 的 UE5 程序化城市道路生成器**
+
+English | [简体中文](README.zh-CN.md)
 
 RoadForge is a C++ Unreal Engine project for generating city road scenes from OpenStreetMap data. It converts OSM ways into splines, builds procedural road meshes, adds lane markings, curbs, sidewalks, elevated bridge decks, simple buildings, and instanced street lamps.
 
